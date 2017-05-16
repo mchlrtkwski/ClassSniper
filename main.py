@@ -62,9 +62,6 @@ while True:
         tableEndIndex = webText.find("</tr>")
         webText = webText[:tableEndIndex]
 
-        #Test what HTML is left
-        #print webText
-
         #Clycle through the Table data, splicing the webText further each time
         for x in range(0, 3):
             goldenNumber = re.search(r'[0-9]+', webText)
